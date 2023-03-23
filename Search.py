@@ -1,7 +1,7 @@
 from Vertex import Vertex
 from GraphSearch import Search
 
-print("IE 436 Graph Search Algorithms...")
+print("IE 436 Graph Search Algorithms....")
 
 vertices = []
 
