@@ -1,10 +1,8 @@
 from Vertex import Vertex
-from BreadthFirstSearch import BFS
-from DepthFirstSearch import DFS
+from GraphSearch import Search
 
 print("IE 436 Graph Search Algorithms...")
 
-SIZE = 6
 vertices = []
 
 vertices.append(Vertex(1, [2, 3]))
@@ -14,8 +12,11 @@ vertices.append(Vertex(4, [6]))
 vertices.append(Vertex(5, [4, 6]))
 vertices.append(Vertex(6, []))
 
-myBFS = BFS()
-myBFS.ImplementBFS(vertices, 0)
+mySearch = Search()
 
-myDFS = DFS()
-myDFS.ImplementDFS(vertices, 0)
+#For BFS implementation
+mySearch.ImplementSearch(vertices, 0, True)
+
+#For DFS implementation
+mySearch.ImplementSearch(vertices, 0, False)
+
